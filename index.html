@@ -16,11 +16,28 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="screen" id="screen">
-    <div id="app" class="app"></div>
-  </div>
-  <div id="toast" class="toast" role="status" hidden></div>
+  <main class="stage">
+    <div class="iphone" aria-label="iPhone 17 Pro">
+      <div class="screen" id="screen">
+        <div class="statusbar" aria-hidden="true">
+          <span class="time" id="clock">9:41</span>
+          <span class="island"></span>
+          <span class="sb-icons">
+            <svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+            <svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0L8 11.5Zm-4.2-4.3L2.3 5.7a8 8 0 0 1 11.4 0l-1.5 1.5a5.9 5.9 0 0 0-8.4 0ZM.6 4.1 0 3.4a11.3 11.3 0 0 1 16 0l-.6.7-.9.9a10 10 0 0 0-13 0L.6 4.1Z"/></svg>
+            <span class="battery"><i></i></span>
+          </span>
+        </div>
+        <div id="app" class="app"></div>
+        <div class="home-ind" aria-hidden="true"></div>
+        <div id="toast" class="toast" role="status" hidden></div>
+      </div>
+    </div>
+  </main>
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script>
+    (function(){var c=document.getElementById("clock");function t(){c.textContent=new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"}).replace(/\s?[AP]M/,"");}t();setInterval(t,30000);})();
+  </script>
 </body>
 </html>

@@ -133,8 +133,7 @@ function renderWelcome(){
       <div>${ic("person")}<p style="margin:0"><b>One visit, not five</b><span>Still need SFS? We prep your case so it gets solved fast.</span></p></div>
     </div>
     <div style="display:grid;gap:10px;margin-top:28px">
-      <button class="btn" data-act="choose">${ic("shield")}Sign in with Temple SSO</button>
-      <p class="fine">Demo prototype. Sign-in picks a sample student. No real login, password or student data is used.</p>
+      <button class="btn" data-act="choose">Get started</button>
     </div></div>${st.sheet === "accounts" ? sheet() : ""}`;
   app.querySelector('[data-act="choose"]').onclick = () => { st.sheet = "accounts"; renderWelcome(); };
   bindSheet();
