@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F7F7F5">
+<meta name="description" content="Ask SFS help center: plain answers about Temple financial aid, bills and refunds.">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<title>Ask SFS · Help Center</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="./" aria-label="Ask SFS help center home"><span class="brand-icon" aria-hidden="true"></span><span>Ask SFS</span><span class="brand-sub">Help Center</span></a>
+      <nav class="topnav" aria-label="Main">
+        <a href="#topics">Topics</a>
+        <a href="#dates">Key dates</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="../">Open the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-in">
+        <h1>How can we help with paying for Temple?</h1>
+        <p class="lede">Ask in your own words. Answers come from official SFS and Bursar policy, with the source.</p>
+        <form class="askbar" id="askForm" autocomplete="off">
+          <svg class="askbar-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="askInput" type="text" placeholder="e.g. My grant hasn’t shown up and my bill is due" aria-label="Ask a question about aid, bills or refunds">
+          <button type="submit" id="askBtn" aria-label="Ask">Ask</button>
+        </form>
+        <div class="chips" id="chips"></div>
+        <p class="fine">Never type your TUid, SSN or bank numbers.</p>
+      </div>
+    </section>
+
+    <section class="chat-wrap" id="chatWrap" hidden aria-live="polite">
+      <div class="wrap">
+        <div class="chat-head"><h2>Your answer</h2><button type="button" class="link-btn" id="clearChat">Clear</button></div>
+        <div class="chat" id="chat"></div>
+      </div>
+    </section>
+
+    <section class="section" id="topics">
+      <div class="wrap">
+        <div class="section-h"><h2>Browse by topic</h2><p>Short answers to what students ask most.</p></div>
+        <div class="cards" id="cards"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="dates">
+      <div class="wrap">
+        <div class="section-h"><h2>Key dates</h2><p>Spring 2027 and next year’s aid.</p></div>
+        <div class="dates" id="dateList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-h"><h2>Still need a person?</h2><p>Know which office to ask before you call.</p></div>
+        <div class="contact">
+          <a class="c-card" href="tel:+12152042244"><span class="c-k">Aid, FAFSA, loans, SAP</span><b>Student Financial Services</b><span>215-204-2244 · Mon–Fri, 8:30–5</span><span class="c-link">sfs@temple.edu</span></a>
+          <a class="c-card" href="tel:+12152047269"><span class="c-k">Bills, payment plans, refunds</span><b>Bursar’s Office</b><span>215-204-7269</span><span class="c-link">bursar@temple.edu</span></a>
+          <a class="c-card prep" href="../"><span class="c-k">Save a trip</span><b>Prep your case in the app</b><span>We’ll tell you which office to contact and what to have ready, so one visit solves it.</span><span class="c-link">Open Ask SFS →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <span>Ask SFS · Team 12, Temple AI Build Challenge</span>
+      <span>Student project, not an official Temple University site. Answers are paraphrased from public SFS and Bursar pages; confirm money decisions with SFS.</span>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dlgTitle" hidden></div>
+
+  <script src="../data.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

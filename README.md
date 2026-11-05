@@ -1,10 +1,13 @@
-# Ask SFS — student app
+# Ask SFS — student app + help center website
 
 Quick answers about Temple financial aid, bills and refunds. Built by Team 12 for the Temple AI Build Challenge.
 
 It's a web app that installs to the iPhone Home Screen and runs full screen like a native app. It also works offline after the first visit. It uses plain HTML, CSS and JavaScript, so there's no build step.
 
 > Prototype. "Sign in with Temple SSO" is a demo button that picks a made-up student. There is no real login, and no real student data is used. Answers come from public SFS and Bursar pages (linked in each answer).
+
+## Help center website
+The `web/` folder is the desktop/mobile help center: one ask bar (chat), topic cards, key dates and who to contact. It uses the same `data.js` as the app. Live at `/ask-sfs/web/`.
 
 ## Run it in Visual Studio Code
 1. Open this folder in VS Code (**File → Open Folder**).
