@@ -1,4 +1,4 @@
-# Ask SFS — student app + help center website
+# Ask SFS — student app, staff desktop and help center
 
 Quick answers about Temple financial aid, bills and refunds. Built by Team 12 for the Temple AI Build Challenge.
 
@@ -8,6 +8,9 @@ It's a web app that installs to the iPhone Home Screen and runs full screen like
 
 ## Help center website
 The `web/` folder is the desktop/mobile help center: one ask bar (chat), topic cards, key dates and who to contact. It uses the same `data.js` as the app. Live at `/ask-sfs/web/`.
+
+## Staff desktop
+The `staff/` folder is the SFS staff tool: a sorted inbox with summaries, privacy flags, drafted replies a person approves, Trends and Policy lookup. Sample emails only. Cases sent from the student app on the same device show up under “From the app.” Live at `/ask-sfs/staff/`.
 
 ## Run it in Visual Studio Code
 1. Open this folder in VS Code (**File → Open Folder**).
