@@ -1,0 +1,15 @@
+{
+  "name": "Ask SFS",
+  "short_name": "Ask SFS",
+  "description": "Quick answers about Temple financial aid, bills and refunds.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F7F5",
+  "theme_color": "#F7F7F5",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
