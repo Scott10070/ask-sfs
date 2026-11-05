@@ -99,8 +99,7 @@ function renderDesk(){
       <p class="subhead" style="margin:0">The staff inbox holds student messages, so only Student Financial Services accounts can open it.</p>
       <button class="btn" data-d="in">${ic("shield")}Sign in as SFS staff</button>
       <button class="btn plain" data-d="deny">Try a student account</button>
-      ${sd.denied ? `<div class="alert">${ic("lock")}<span><b>Access denied.</b> Student accounts can't open the SFS staff dashboard.</span></div>` : ""}
-      <p class="caption" style="margin:0">Demo prototype: signs in as a sample counselor. No real login or student data.</p></div></div>`;
+      ${sd.denied ? `<div class="alert">${ic("lock")}<span><b>Access denied.</b> Student accounts can't open the SFS staff dashboard.</span></div>` : ""}</div></div>`;
     desk.querySelector('[data-d="in"]').onclick = () => { S.staff = true; sd.denied = false; save(); renderDesk(); };
     desk.querySelector('[data-d="deny"]').onclick = () => { sd.denied = true; renderDesk(); };
     return;
